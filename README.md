@@ -1,5 +1,5 @@
-# portfolio
+# Portfolio
 Portafolio personal - Federico Navós
 
-# Link:
+# Link
 https://federiconavos.netlify.app/

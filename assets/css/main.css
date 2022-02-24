@@ -71,6 +71,10 @@ input, select, textarea {
 	appearance: none;
 }
 
+.container {
+	padding: 25px;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3048,7 +3052,6 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			width: 50em;
-			-ms-flex: 1;
 		}
 
 			.spotlights > section > .content > .inner {

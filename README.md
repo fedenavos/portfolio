@@ -1,5 +1,7 @@
-# Página web
-Portafolio personal - Federico Navós
+# Federico Navós
+
+Personal portfolio made with HTML, CSS and Javascript.
 
 # Link
+
 https://federiconavos.netlify.app/

@@ -1,0 +1,34 @@
+.flag-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.radio-label {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  padding-left: 28px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* label img {
+  position: absolute;
+  left: 0;
+} */
+
+@media screen and (min-width: 1280px) {
+
+  .radio-container {
+    margin-top: 3em;
+  }
+
+}
+
+@media screen and (max-width: 1280px) {
+
+  .radio-container {
+    margin-top: 0.5em;
+  }
+
+}

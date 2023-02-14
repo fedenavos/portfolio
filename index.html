@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom-css.css" />
 		<link rel="icon" href="images/quantum-computing.png" type="image/x-icon" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -24,7 +25,21 @@
 							<li><a href="#projects">Projects</a></li>
 							<li><a href="#skills">Skills</a></li>
 							<li><a href="#contact">Get in touch</a></li>
-							<li><button onclick="location.href='index_es.html';">Spanish version</button></li>
+							<li>
+								<div class="radio-container">
+									<input type="radio" id="en" name="switch" value="en" checked onclick="location.href='index.html'">
+									<label for="en" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="english"></label>
+									<input type="radio" id="es" name="switch" value="es" onclick="location.href='index_es.html'">
+									<label for="es" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="spanish"></label> 
+								</div>
+
+								<script>
+									var filename = window.location.pathname.split('/').pop();
+									if (filename.indexOf('_es') !== -1) {
+									  document.getElementById('es').checked = true;
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -120,7 +135,7 @@
 								<div class="inner">
 									<h2>University projects</h2>
 									<ul class="actions">
-										<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Classes management for teachers and students</a></li>
+										<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Classes management</a></li>
 										<li><a href="https://github.com/FrancoGaytan/TPIEntornosGraficos"  target="_blank"><span class="icon brands major fa-github"></span></a></li>
 									</ul>
 								</div>

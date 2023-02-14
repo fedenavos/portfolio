@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom-css.css" />
 		<link rel="icon" href="images/quantum-computing.png" type="image/x-icon" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -24,7 +25,21 @@
 							<li><a href="#projects">Proyectos</a></li>
 							<li><a href="#skills">Habilidades</a></li>
 							<li><a href="#contact">Contactate conmigo</a></li>
-							<li><button onclick="location.href='index.html';">Versión en Inglés</button></li>
+							<li>
+								<div class="radio-container">
+									<input type="radio" id="en" name="switch" value="en" checked onclick="location.href='index.html'">
+									<label for="en" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="english"></label>
+									<input type="radio" id="es" name="switch" value="es" onclick="location.href='index_es.html'">
+									<label for="es" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="spanish"></label> 
+								</div>
+
+								<script>
+									var filename = window.location.pathname.split('/').pop();
+									if (filename.indexOf('_es') !== -1) {
+									  document.getElementById('es').checked = true;
+									}
+								</script>
+							</li>
 						</ul>
 					</nav>
 				</div>
@@ -119,7 +134,7 @@
 									<h2>Proyectos de la facultad</h2>
 									<p>Trabajos prácticos realizados para materias de la facultad.</p>
 									<ul class="actions">
-										<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Gestión de consultas para alumnos/profesores</a></li>
+										<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Gestión de consultas</a></li>
 										<li><a href="https://github.com/FrancoGaytan/TPIEntornosGraficos"><span class="icon brands major fa-github"></span></a></li>
 									</ul>
 								</div>

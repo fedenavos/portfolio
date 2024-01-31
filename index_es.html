@@ -5,281 +5,334 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="es">
-	<head>
-		<title>Federico Navós</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="assets/css/custom-css.css" />
-		<link rel="icon" href="images/quantum-computing.png" type="image/x-icon" />
-		<script src="https://kit.fontawesome.com/e5370c3c6f.js" crossorigin="anonymous"></script>
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#me">¿Quién soy?</a></li>
-							<li><a href="#projects">Proyectos</a></li>
-							<li><a href="#skills">Habilidades</a></li>
-							<li><a href="#contact">Contactate conmigo</a></li>
-							<li>
-								<div class="radio-container">
-									<input type="radio" id="en" name="switch" value="en" checked onclick="location.href='index.html'">
-									<label for="en" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="english"></label>
-									<input type="radio" id="es" name="switch" value="es" onclick="location.href='index_es.html'">
-									<label for="es" class="radio-label"><img class="flag-icon" src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="spanish"></label> 
-								</div>
+<head>
+	<title>Federico Navós</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/custom-css.css" />
+	<link rel="icon" href="images/quantum-computing.png" type="image/x-icon" />
+	<script src="https://kit.fontawesome.com/e5370c3c6f.js" crossorigin="anonymous"></script>
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
 
-								<script>
-									var filename = window.location.pathname.split('/').pop();
-									if (filename.indexOf('_es') !== -1) {
-									  document.getElementById('es').checked = true;
-									}
-								</script>
-							</li>
+<body class="is-preload">
+
+	<!-- Sidebar -->
+	<section id="sidebar">
+		<div class="inner">
+			<nav>
+				<ul>
+					<li><a href="#me">¿Quién soy?</a></li>
+					<li><a href="#projects">Proyectos</a></li>
+					<li><a href="#skills">Habilidades</a></li>
+					<li><a href="#contact">Contactate conmigo</a></li>
+					<li>
+						<div class="radio-container">
+							<input type="radio" id="en" name="switch" value="en" checked onclick="location.href='index.html'">
+							<label for="en" class="radio-label"><img class="flag-icon"
+									src="https://cdn-icons-png.flaticon.com/512/197/197484.png" alt="english"></label>
+							<input type="radio" id="es" name="switch" value="es" onclick="location.href='index_es.html'">
+							<label for="es" class="radio-label"><img class="flag-icon"
+									src="https://cdn-icons-png.flaticon.com/512/197/197593.png" alt="spanish"></label>
+						</div>
+
+						<script>
+							var filename = window.location.pathname.split('/').pop();
+							if (filename.indexOf('_es') !== -1) {
+								document.getElementById('es').checked = true;
+							}
+						</script>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</section>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Me -->
+		<section id="me" class="wrapper style1 fullscreen fade-up">
+			<div class="inner">
+				<h1>Hola, soy Federico</h1>
+				<div class="description">
+					<p>Soy un apasionado Ingeniero en Sistemas de Rosario, Argentina. Me encanta navegar en el mundo de la
+						tecnología y siempre tengo interés en adquirir nuevos conocimientos y habilidades.</p>
+					<p>Con habilidades en Python y React, mi especialidad es dar vida a las ideas mediante el desarrollo Full
+						Stack. Para mí, ser desarrollador va más allá de programar; es un proceso de exploración y creación.</p>
+				</div>
+				<ul class="actions">
+					<li><a href="https://mibot.vercel.app/" class="button" target="_blank">¿Quieres saber más sobre mí? <i
+								class="fa-solid fa-up-right-from-square"></i></a></li>
+				</ul>
+				<ul class="actions">
+					<li><a href="https://drive.google.com/uc?export=download&id=1LKlBcJW_5nGUwcQDxmrhgt43QO3Es1nj"
+							class="button special" target="_blank">Descargar CV</a></li>
+					<li><a href="https://www.linkedin.com/in/federico-navos/?locale=en_US"><span
+								class="icon brands major fa-linkedin-in"></span></a></li>
+				</ul>
+			</div>
+		</section>
+
+		<!-- Projects -->
+		<section id="projects" class="wrapper style2 spotlights">
+			<section>
+				<a href="https://mibot.vercel.app/" class="image"><img src="images/robot.png" alt="Chat bot"
+						data-position="center center" style="padding: 4em;" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Chat-Bot</h2>
+						<p>Descubre mi Chat bot! Hecho con Next y herramientas IA de Cohere. Es una aplicación web que permite
+							interactuar con un
+							chat bot que responde preguntas sobre mi.</p>
+						<ul class="actions">
+							<li><a href="https://mibot.vercel.app/" target="_blank" class="button">Ver más</a></li>
+							<li><a href="https://github.com/fedenavos/chat-bot" target="_blank"><span
+										class="icon brands major fa-github"></span></a></li>
 						</ul>
-					</nav>
+					</div>
 				</div>
 			</section>
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Me -->
-					<section id="me" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Federico Navós</h1>
-							<p>Ingeniero en Sistemas de Información.</p>
-							<p>Full-Stack Developer.</p>
-							<p></p>
-							<ul class="actions">
-								<li><a href="https://mibot.vercel.app/" class="button" target="_blank" >Querés saber más sobre mi? <i class="fa-solid fa-up-right-from-square"></i></a></li>
-							</ul>
-							<ul class="actions">
-								<li><a href="https://drive.google.com/uc?export=download&id=1LKlBcJW_5nGUwcQDxmrhgt43QO3Es1nj" class="button special" target="_blank" >Descargar CV</a></li>
-								<li><a href="https://www.linkedin.com/in/federico-navos/"><span class="icon brands major fa-linkedin-in"></span></a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Projects -->
-					<section id="projects" class="wrapper style2 spotlights">
-						<section>
-							<a href="https://mibot.vercel.app/" class="image"><img src="images/robot.png" alt="Chat bot" data-position="center center" style="padding: 4em;" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Chat-Bot</h2>
-									<p>Chat bot hecho con Next y herramientas IA de Cohere. Es una aplicación web que permite interactuar con un chat bot que responde preguntas sobre mi.</p>
-									<ul class="actions">
-										<li><a href="https://mibot.vercel.app/" target="_blank" class="button">Ver más</a></li>
-										<li><a href="https://github.com/fedenavos/chat-bot" target="_blank"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://gathertrips.com" class="image"><img src="images/gathertrips.png" alt="GatherTrips" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Gather</h2>
-									<p>Aplicación web hecha con Next JS. Es una plataforma de carpooling que permite encontrar gente para viajar. Fue mi proyecto final de carrera.</p>
-									<ul class="actions">
-										<li><a href="https://gathertrips.com" target="_blank" class="button">Ver más</a></li>
-										<li><a href="https://github.com/fedenavos/Gather" target="_blank"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://repe-app.vercel.app" class="image"><img src="images/qatar-2022.jpg" alt="Repe app" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Repe-app</h2>
-									<p>Aplicación web hecha con React que permite hacer un seguimiento de las figuritas de tu álbum del mundial. También ofrece la posibilidad de ver el álbum del resto de los usuarios de la plataforma.</p>
-									<ul class="actions">
-										<li><a href="https://repe-app.vercel.app" target="_blank" class="button">Ver más</a></li>
-										<li><a href="https://github.com/fedenavos/repe-app" target="_blank"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="https://osmosispools.netlify.app" class="image"><img src="images/osmosis-logo.png" alt="Osmosis pools page" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Osmosis Pools</h2>
-									<p>Página web desarrollada con Angular cuyo objetivo es ver la información de los pooles de liquidez de <a href="https://app.osmosis.zone/" target="_blank">Osmosis AMM</a> (Automated market maker) de una forma amigable.</p>
-									<ul class="actions">
-										<li><a href="https://osmosispools.netlify.app" class="button">Ver más</a></li>
-										<li><a href="https://github.com/fedenavos/osmosis-pools"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="./pages/pelibry_es.html" class="image"><img src="images/pelibry-welcome.jpeg" alt="Pelibry" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Pelibry</h2>
-									<p>App mobile desarrollada con Flutter. Esta te permite anotar las películas vistas, puntuarlas y escribir reseñas de las mismas. Además con el nombre de usuario se pueden ver las películas que anotó el resto de usuarios en la aplicación.</p>
-									<ul class="actions">
-										<li><a href="./pages/pelibry_es.html" class="button">Ver más</a></li>
-										<li><a href="https://github.com/fedenavos/pelibry_app"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="./pages/coronatime_es.html" class="image"><img src="images/coronatime-game2.jpeg" alt="Coronatime" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Quedate en casa</h2>
-									<p>Videojuego mobile creado desde cero con Unity.</p>
-									<ul class="actions">
-										<li><a href="./pages/coronatime_es.html" class="button">Ver más</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/UTN_logo.jpg" alt="UTN" data-position="center center"/></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Proyectos de la facultad</h2>
-									<p>Trabajos prácticos realizados para materias de la facultad.</p>
-									<ul class="actions">
-										<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Gestión de consultas</a></li>
-										<li><a href="https://github.com/FrancoGaytan/TPIEntornosGraficos"><span class="icon brands major fa-github"></span></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
-
-				<!-- Skills -->
-					<section id="skills" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>Habilidades</h2>
-							<div class="features">
-								<section>
-									<span class="icon brands major fa-python"></span>
-									<h3>Python</h3>
-								</section>
-								<section>
-									<span class="icon solid major fa-database"></span>
-									<h3>Bases de datos SQL</h3>
-								</section>
-								<section>
-									<span class="icon brands major fab fa-react"></span>
-									<h3>React / Next JS</h3>
-								</section>
-								<section>
-									<span class="icon brands major fab fa-aws"></span>
-									<h3>AWS Services</h3>
-								</section>
-								<section>
-									<span class="icon brands major fa-js"></span>
-									<h3>Javascript / Typescript</h3>
-								</section>
-								<section>
-									<span class="icon brands major fab fa-html5"></span>
-									<h3>HTML y CSS</h3>
-								</section>
-								<section>
-									<span class="icon brands major fa-git-alt"></span>
-									<h3>Git</h3>
-								</section>
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Entorno .NET</h3>
-								</section>
-							</div>
-							<h2>Intereses</h2>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-cubes"></span>
-									<h3>Desarrollo Blockchain</h3>
-								</section>
-								<section>
-									<span class="icon solid major fa-microchip"></span>
-									<h3>Inteligencia Artificial</h3>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="https://drive.google.com/uc?export=download&id=1LKlBcJW_5nGUwcQDxmrhgt43QO3Es1nj" class="button">Ver CV</a></li>
-							</ul>
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Contacto</h2>
-							<div class="split style1">
-								<section>
-									<form name="contact" method="POST" data-netlify="true" netlify>
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Nombre</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Mensaje</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><button class="button submit" type="submit">Enviar mensaje</button></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:fedenavos@gmail.com" rel="external">fedenavos@gmail.com</a>
-										</li>
-										<li>
-											<h3>Sociales</h3>
-											<ul class="icons">
-												<li><a href="https://github.com/fedenavos" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-												<li><a href="https://www.instagram.com/fedenavos/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="https://www.linkedin.com/in/federico-navos/" class="icon brands fa-linkedin-in" ><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
-
-			</div>
-
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Federico Navós. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
+			<section>
+				<a href="https://lookeando.com" class="image"><img src="images/lookeando.png" alt="Lookeando"
+						data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Lookeando</h2>
+						<p>Aplicación web hecha con React en el front-end y Flask en el back-end. La plataforma conecta a los
+							usuarios con diversos servicios de belleza, ofreciendo un mapa interactivo y reseñas auténticas.</p>
+						<ul class="actions">
+							<li><a href="https://lookeando.com" target="_blank" class="button">Ver más</a></li>
+						</ul>
+					</div>
 				</div>
-			</footer>
+			</section>
+			<section>
+				<a href="https://gathertrips.com" class="image"><img src="images/gathertrips.png" alt="GatherTrips"
+						data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Gather</h2>
+						<p>Este fue mi proyecto final de carrera. Es una aplicación web hecha con Next JS. Una plataforma de
+							carpooling que permite encontrar gente para viajar.</p>
+						<ul class="actions">
+							<li><a href="https://gathertrips.com" target="_blank" class="button">Ver más</a></li>
+							<li><a href="https://github.com/fedenavos/Gather" target="_blank"><span
+										class="icon brands major fa-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="https://repe-app.vercel.app" class="image"><img src="images/qatar-2022.jpg" alt="Repe app"
+						data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Repe-app</h2>
+						<p>Aplicación web hecha con React que permite hacer un seguimiento de las figuritas de tu álbum del mundial.
+							También ofrece la posibilidad de ver el álbum del resto de los usuarios de la plataforma.</p>
+						<ul class="actions">
+							<li><a href="https://repe-app.vercel.app" target="_blank" class="button">Ver más</a></li>
+							<li><a href="https://github.com/fedenavos/repe-app" target="_blank"><span
+										class="icon brands major fa-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="./pages/pelibry_es.html" class="image"><img src="images/pelibry-welcome.jpeg" alt="Pelibry"
+						data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Pelibry</h2>
+						<p>App mobile desarrollada con Flutter. Esta te permite anotar las películas vistas, puntuarlas y escribir
+							reseñas de las mismas. Además con el nombre de usuario se pueden ver las películas que anotó el resto de
+							usuarios en la aplicación.</p>
+						<ul class="actions">
+							<li><a href="./pages/pelibry_es.html" class="button">Ver más</a></li>
+							<li><a href="https://github.com/fedenavos/pelibry_app"><span
+										class="icon brands major fa-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="./pages/coronatime_es.html" class="image"><img src="images/coronatime-game2.jpeg" alt="Coronatime"
+						data-position="top center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Quedate en casa</h2>
+						<p>Videojuego mobile creado desde cero con Unity.</p>
+						<ul class="actions">
+							<li><a href="./pages/coronatime_es.html" class="button">Ver más</a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<!-- <section>
+				<a href="https://osmosispools.netlify.app" class="image"><img src="images/osmosis-logo.png"
+						alt="Osmosis pools page" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Osmosis Pools</h2>
+						<p>Página web desarrollada con Angular cuyo objetivo es ver la información de los pooles de liquidez de <a
+								href="https://app.osmosis.zone/" target="_blank">Osmosis AMM</a> (Automated market maker) de una forma
+							amigable.</p>
+						<ul class="actions">
+							<li><a href="https://osmosispools.netlify.app" class="button">Ver más</a></li>
+							<li><a href="https://github.com/fedenavos/osmosis-pools"><span
+										class="icon brands major fa-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section>
+				<a href="#" class="image"><img src="images/UTN_logo.jpg" alt="UTN" data-position="center center" /></a>
+				<div class="content">
+					<div class="inner">
+						<h2>Proyectos de la facultad</h2>
+						<p>Trabajos prácticos realizados para materias de la facultad.</p>
+						<ul class="actions">
+							<li><a href="https://moduloconsultasdocentes.000webhostapp.com/" target="_blank" class="button">Gestión de
+									consultas</a></li>
+							<li><a href="https://github.com/FrancoGaytan/TPIEntornosGraficos"><span
+										class="icon brands major fa-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</section> -->
+		</section>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Skills -->
+		<section id="skills" class="wrapper style3 fade-up">
+			<div class="inner">
+				<h2>Habilidades</h2>
+				<div class="features">
+					<section>
+						<span class="icon brands major fa-python"></span>
+						<h3>Python</h3>
+					</section>
+					<section>
+						<span class="icon solid major fa-database"></span>
+						<h3>Bases de datos SQL</h3>
+					</section>
+					<section>
+						<span class="icon brands major fab fa-react"></span>
+						<h3>React / Next JS</h3>
+					</section>
+					<section>
+						<span class="icon brands major fab fa-aws"></span>
+						<h3>Servicios AWS</h3>
+					</section>
+					<section>
+						<span class="icon brands major fa-js"></span>
+						<h3>Javascript / Typescript</h3>
+					</section>
+					<section>
+						<span class="icon brands major fab fa-html5"></span>
+						<h3>HTML y CSS</h3>
+					</section>
+					<section>
+						<span class="icon brands major fa-git-alt"></span>
+						<h3>Git</h3>
+					</section>
+					<section>
+						<span class="icon solid major fa-code"></span>
+						<h3>Entorno .NET</h3>
+					</section>
+				</div>
+				<h2>Intereses</h2>
+				<div class="features">
+					<section>
+						<span class="icon solid major fa-cubes"></span>
+						<h3>Desarrollo Blockchain</h3>
+					</section>
+					<section>
+						<span class="icon solid major fa-microchip"></span>
+						<h3>Inteligencia Artificial</h3>
+					</section>
+				</div>
+				<ul class="actions">
+					<li><a href="https://drive.google.com/uc?export=download&id=1LKlBcJW_5nGUwcQDxmrhgt43QO3Es1nj"
+							class="button">Ver CV</a></li>
+				</ul>
+			</div>
+		</section>
 
-	</body>
+		<!-- Contact -->
+		<section id="contact" class="wrapper style1 fade-up">
+			<div class="inner">
+				<h2>Contacto</h2>
+				<div class="split style1">
+					<section>
+						<form name="contact" method="POST" data-netlify="true" netlify>
+							<div class="fields">
+								<div class="field half">
+									<label for="name">Nombre</label>
+									<input type="text" name="name" id="name" />
+								</div>
+								<div class="field half">
+									<label for="email">Email</label>
+									<input type="text" name="email" id="email" />
+								</div>
+								<div class="field">
+									<label for="message">Mensaje</label>
+									<textarea name="message" id="message" rows="5"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><button class="button submit" type="submit">Enviar mensaje</button></li>
+							</ul>
+						</form>
+					</section>
+					<section>
+						<ul class="contact">
+							<li>
+								<h3>Email</h3>
+								<a href="mailto:fedenavos@gmail.com" rel="external">fedenavos@gmail.com</a>
+							</li>
+							<li>
+								<h3>Sociales</h3>
+								<ul class="icons">
+									<li><a href="https://github.com/fedenavos" class="icon brands fa-github" target="_blank"><span
+												class="label">GitHub</span></a></li>
+									<li><a href="https://www.instagram.com/fedenavos/" target="_blank"
+											class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="https://www.linkedin.com/in/federico-navos/" class="icon brands fa-linkedin-in"><span
+												class="label">LinkedIn</span></a></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper style1-alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Federico Navós. All rights reserved.</li>
+				<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
